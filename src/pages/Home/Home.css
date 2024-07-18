@@ -1,0 +1,18 @@
+.Devise {
+  margin : 10px 20px;
+  background-image: url("@/assets/e270fc8fc902a1eb738458e7b29c1899.jpg") ;
+  background-size: cover;
+  background-position: center;
+  box-shadow:inset 50px 50px 50px 50px rgba(32, 32, 32, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.Devise h1 {
+    font-family: "Montserrat-bold";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color : white;
+    padding: 30px;
+}

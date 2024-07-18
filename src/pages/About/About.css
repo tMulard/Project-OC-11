@@ -1,0 +1,21 @@
+.AboutHeader {
+    margin : 10px 0px;
+    background-image: url("@/assets/Image_source_2.jpg") ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    text-align: center;
+    padding : 80px;
+}
+
+.AboutBody {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.AboutBody .Collapse {
+    padding : 20px 0;
+    width : 90%;
+}

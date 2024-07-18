@@ -1,0 +1,22 @@
+.Header {
+    padding : 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.LinkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.underline {
+    text-decoration: underline;
+}

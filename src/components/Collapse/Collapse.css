@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url("../../fonts/Montserrat-Bold.ttf");
+    font-display: swap;
+}
+
+.Collapse {
+    width : 40%;
+}
+
+.Collapse .Clickable {
+    background-color: #ff6060;
+    color : white;
+    border-radius : 10px;
+    padding : 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Collapse h3 {
+    font-family: Montserrat-bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.upsideDown {
+    transform: rotate(180deg);
+}

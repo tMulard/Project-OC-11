@@ -1,0 +1,11 @@
+.Gallery {
+    margin: 10px 20px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
