@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom'
 import Tag from "@/components/Tag/Tag"
 import Star from '../../components/Star/Star'
 import { useState, useEffect } from 'react'
+import Lightbox from '../../components/Lightbox/Lightbox'
+
 
 const Housing = () => {
     const {houseId} = useParams()
@@ -16,7 +18,7 @@ const Housing = () => {
             setHouse(houses.find((el) => el.id === houseId ))
         }
     }, [houses])
-
+    
     const renderStars = () => {
         const maxStar = 5
         let starsStatus = []
@@ -32,12 +34,11 @@ const Housing = () => {
         return starsStatus.map((status, index) => <Star status={status} key={index} />)
     }
 
-
     return (
         <>
             {house ? (
                 <>
-                    <img className='Cover' src={house.cover} />
+                <Lightbox pics={house.pictures} />
                     <section>
                         <div className='Presentation'>
                             <div className='Title'>
