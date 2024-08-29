@@ -14,7 +14,7 @@ import Header from './components/Header/Header.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HousesProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.PROD ? "/Project-OC-11/" : "/"}>
         <main className='main'>
           <Header />
           <Routes>

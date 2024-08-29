@@ -62,7 +62,8 @@
     justify-content: flex-start;
     gap: 10px;
     width : 45%;
-    font-family: "Montserrat-bold";
+    font-family: "Montserrat";
+    font-weight: 700;
 }
 
 .Stars {

@@ -1,14 +1,4 @@
-@font-face {
-    font-family: "Montserrat";
-    src: url("../../fonts/Montserrat-Light.ttf");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Montserrat-bold";
-    src: url("../../fonts/Montserrat-Bold.ttf");
-    font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
     width : 100%;

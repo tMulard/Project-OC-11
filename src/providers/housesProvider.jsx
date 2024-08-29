@@ -11,7 +11,7 @@ const HousesProvider = ({children}) => {
     const [houses, setHouses] = useState([])
 
     useEffect(() => {
-        fetch("../../../logements.json")
+        fetch("./logements.json")
           .then((data) => data.json())
           .then((data) => setHouses(data))
           .catch((error) => console.log(error));
