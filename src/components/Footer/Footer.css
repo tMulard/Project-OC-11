@@ -1,5 +1,5 @@
 .Footer {
-    padding : 10px 20px;
+    padding : 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -7,6 +7,9 @@
     text-decoration: none;
     background-color: black;
     color: rgba(255, 255, 255, 0.87);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 .Footer img {
     background-color: black;

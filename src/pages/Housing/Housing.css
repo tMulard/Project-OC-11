@@ -39,6 +39,7 @@
     color : #FF6060;
     font-size: 18px;
     max-width : 70px;
+    margin : 0 10px;
 }
 
 .Author img {
@@ -81,6 +82,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: top;
+    margin-bottom: 100px;
 }
 
 .Collapse .content {
