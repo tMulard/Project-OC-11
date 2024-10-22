@@ -16,3 +16,13 @@
     color : white;
     padding: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .Devise h1 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px;
+}
+}

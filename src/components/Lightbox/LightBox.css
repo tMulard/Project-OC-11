@@ -28,3 +28,15 @@
 .arrow-right {
     right: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .lightbox-container {
+        height : 255px;
+        width: 90%;
+        border-radius: 20px;
+        margin: auto;
+    }
+    .arrow-left, .arrow-right {
+        height: 50px;
+    }
+}

@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 import Tag from "@/components/Tag/Tag"
 import Star from '../../components/Star/Star'
 import { useState, useEffect } from 'react'
-import Lightbox from '../../components/Lightbox/Lightbox'
+import Lightbox from '../../components/Lightbox/Lightbox.jsx'
 
 
 const Housing = () => {
@@ -38,7 +38,7 @@ const Housing = () => {
         <>
             {house ? (
                 <>
-                <Lightbox pics={house.pictures} />
+                    <Lightbox pics={house.pictures} />
                     <section>
                         <div className='Presentation'>
                             <div className='Title'>

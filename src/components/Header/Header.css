@@ -20,3 +20,15 @@
 .underline {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .Header {
+        margin: 0 20px;
+    }
+    .Header img {
+        max-width: 50%;
+    }
+    .LinkContainer {
+        width: 40%;
+    }
+}
