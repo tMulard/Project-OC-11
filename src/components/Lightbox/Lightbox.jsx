@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./LightBox.css"
+import "./LightBox.scss"
 import arrowLeft from '@/assets/arrow_left.svg'
 import arrowRight from '@/assets/arrow_right.svg'
 

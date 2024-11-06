@@ -1,4 +1,4 @@
-import './Thumb.css'
+import './Thumb.scss'
 
 const Thumb = ({text, image}) => {
 

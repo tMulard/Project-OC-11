@@ -1,4 +1,4 @@
-import './Star.css'
+import './Star.scss'
 import active from '@/assets/star-rating-active.svg'
 import inactive from '@/assets/star-rating-inactive.svg'
 

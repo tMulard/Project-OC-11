@@ -1,4 +1,4 @@
-import './Home.css'
+import './Home.scss'
 import Gallery from '@/components/Gallery/Gallery'
 
 function Home() {

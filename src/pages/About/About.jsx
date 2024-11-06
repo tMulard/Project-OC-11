@@ -1,4 +1,4 @@
-import './About.css'
+import './About.scss'
 import Collapse from '../../components/Collapse/Collapse'
 
 const About = () => {

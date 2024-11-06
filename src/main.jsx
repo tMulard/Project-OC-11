@@ -1,5 +1,4 @@
-import './reset.css'
-import './main.css'
+import './style/main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './pages/Home/Home.jsx'

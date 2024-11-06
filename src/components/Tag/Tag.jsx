@@ -1,4 +1,4 @@
-import './Tag.css'
+import './Tag.scss'
 
 const Tag = ({text}) => {
 

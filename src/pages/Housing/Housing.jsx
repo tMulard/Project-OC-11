@@ -1,23 +1,27 @@
-import './Housing.css'
-import Collapse from '../../components/Collapse/Collapse'
-import useHouses from '../../hooks/useHouses'
+import './Housing.scss'
+import Collapse from '@/components/Collapse/Collapse'
+import useHouses from '@/hooks/useHouses'
 import { useParams } from 'react-router-dom'
 import Tag from "@/components/Tag/Tag"
-import Star from '../../components/Star/Star'
+import Star from '@/components/Star/Star'
 import { useState, useEffect } from 'react'
-import Lightbox from '../../components/Lightbox/Lightbox.jsx'
+import Lightbox from '@/components/Lightbox/Lightbox.jsx'
 
 
 const Housing = () => {
+    //Récupération de l'id dans la route, visible dans l'url
     const {houseId} = useParams()
+    //Récupération des data
     const houses = useHouses()
+    //Unique moyen de modifier/refresh le DOM, à la place des Queryselector
     const [house, setHouse] = useState()
 
+    //Récupération des données de la maison si présente dans la data
     useEffect(() => {
         if (houses) {
             setHouse(houses.find((el) => el.id === houseId ))
         }
-    }, [houses])
+    }, [houses])//effet de bord = rejoue si une donnée change dans le tableau houses
     
     const renderStars = () => {
         const maxStar = 5
@@ -40,25 +44,26 @@ const Housing = () => {
                 <>
                     <Lightbox pics={house.pictures} />
                     <section>
-                        <div className='Presentation'>
-                            <div className='Title'>
-                                <h1>{house.title}</h1>
-                                <p>{house.location}</p>
+                        <div className="Presentation">
+                            <div className='LeftSide'>
+                                <div className='Title'>
+                                    <h1>{house.title}</h1>
+                                    <p>{house.location}</p>
+                                </div>
+
+                                <div className="Tags">
+                                    {house.tags.map(tag => <Tag key={tag} text={tag} />)}
+                                </div>
                             </div>
 
-                            <div className='Author'>
-                                <h3>{house.host.name}</h3>
-                                <img src={house.host.picture} alt="AuthorPortrait" />
-                            </div>
-                        </div>
-
-                        <div className="Ratings">
-                            <div className="Tags">
-                                {house.tags.map(tag => <Tag key={tag} text={tag} />)}
-                            </div>
-
-                            <div className="Stars">
-                                {renderStars()}
+                            <div className="RightSide">
+                                <div className="Stars">
+                                    {renderStars()}
+                                </div>
+                                <div className='Author'>
+                                    <h3>{house.host.name}</h3>
+                                    <img src={house.host.picture} alt="AuthorPortrait" />
+                                </div>
                             </div>
                         </div>
 
