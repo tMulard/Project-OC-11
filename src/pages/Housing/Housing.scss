@@ -63,11 +63,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap : 10px;
     h3 {
         color : #FF6060;
         font-size: 18px;
-        max-width : 70px;
-        margin : 0 10px;
     }
 
     img {
@@ -85,7 +84,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: top;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .Collapse .content {
@@ -125,7 +124,7 @@
     .Description {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .Collapse {
         margin: 10px;
