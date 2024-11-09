@@ -30,3 +30,23 @@
     color: black;
     padding: 30px;
 }
+
+@media screen and (max-width: 960px) {
+    .ErrorBody {
+        margin : 0 auto;
+        width : 90%;
+
+        a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .ErrorTitle {
+        font-size: 96px;
+        line-height: 136px;
+    }
+    .ErrorText {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

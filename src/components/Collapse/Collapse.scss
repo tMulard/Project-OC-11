@@ -1,5 +1,12 @@
 .Collapse {
     width : 40%;
+    
+    .Content {
+        padding : 31px;
+        background-color: #F6F6F6;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 }
 
 .Collapse .Clickable {
@@ -12,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+
 }
 
 .Collapse h3 {

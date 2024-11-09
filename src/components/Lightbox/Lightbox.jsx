@@ -29,6 +29,7 @@ const Lightbox = ({pics}) => {
         <div className="lightbox-container">
             <div className="arrow-left" onClick={decrease}><img src={arrowLeft}/></div>
             <div className="arrow-right" onClick={increase}><img src={arrowRight}/></div>
+            <div className="ShowIndex">{index+1}/{pics.length}</div>
 
             <img src={pics[index]} />
         </div>
